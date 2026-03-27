@@ -1,5 +1,5 @@
 ---
-
+import '../../styles/global.css';
 ---
 
 <html lang="en">
@@ -22,55 +22,14 @@
 				}
 			}
 		</script>
-		<style>
-			@font-face {
-				font-family: 'Sentient';
-				src: url(/fonts/Sentient-Regular.otf);
-			}
-			body {
-				font-family: 'Sentient';
-				background-color: #006d77;
-				color: #edf6f9;
-				padding: 20px;
-			}
-			.main-div {
-				width: 800px;
-				margin: 60px auto;
-				overflow-wrap: break-word;
-			}
-			a {
-				color: #b6f4ee;
-				font-size: 17px;
-			}
-			a:hover {
-				color: #4de2d3;
-				text-decoration-style: wavy;
-			}
-			h3 {
-				font-family: monospace;
-				font-size: 20px;
-				color: #b8f3ff;
-				opacity: 0.7;
-			}
-			p {
-				font-size: 17.5px;
-				margin-bottom: 40px;
-			}
-			#music_tog {
-				text-decoration: underline;
-			}
-			#music_tog:hover {
-				text-decoration-style: wavy;
-				cursor:pointer;
-			}
-		</style>
 		<div class="main-div">
 			<h3>zaid@blog: ~$</h3>
 			<h1>organizing daydream bengaluru <3</h1>
 			<a href="/">back home?</a>&nbsp;
-			<a onclick="window.toggle_music()" id="music_tog">toggle music?</a><br><br>
-
+			<a onclick="window.toggle_music()" id="music_tag">toggle music?</a><br><br>
 		<p>
+			<img src="/daydream_bengaluru.jpeg" alt="" style="width: 750px; height:auto; border-radius: 30px;"><br><br>
+
 			one random day as usual I opened my slack to see an announcement for a new satellite hackathon that 
 			hackclub was planning to host and reading the post took me back to the time I attended scrapyard where I 
 			had LOADS OF FUN! so I immediately applied to organize one :3. A lot of days later, I get an email telling
@@ -112,10 +71,13 @@
 			a ton of memories, I wish I could travel back to the day I organized this CRAZY event! :)
 			<br>
 			<br>
+			check out their awesome video <a href="https://www.youtube.com/watch?v=XcNAqWufmIg&t=5s">here!</a> :3
+			<br>
+			<br>
 			love yall :3,<br>
 			zaid (aka zeeno.)
 		</p>
 		</div>
-		<script src="/oneko/oneko.js" data-cat="/oneko/oneko.gif"></script>
+		<script src="/oneko/oneko.js" data-cat="/oneko/oneko.gif"></script> 
 	</body>
 </html>
