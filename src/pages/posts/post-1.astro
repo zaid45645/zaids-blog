@@ -1,5 +1,8 @@
 ---
+import Custom from '../../components/custom.astro';
 import '../../styles/global.css';
+const title = "organizing daydream bengaluru <3";
+const bg_music_src = "/music!/C418 - Mice on Venus - Minecraft Volume Alpha.mp3";
 ---
 
 <html lang="en">
@@ -7,10 +10,10 @@ import '../../styles/global.css';
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>organizing daydream bengaluru <3</title>
+		<title>{title}</title>
 	</head>
 	<body>
-		<audio id="my_audio" src="/music!/C418 - Mice on Venus - Minecraft Volume Alpha.mp3" autoplay loop></audio>
+		<audio id="my_audio" src={bg_music_src} autoplay loop></audio>
 		<script>
 			var audio = document.getElementById("my_audio") as HTMLMediaElement;
 			audio.volume = 0.8;
@@ -23,8 +26,8 @@ import '../../styles/global.css';
 			}
 		</script>
 		<div class="main-div">
-			<h3>zaid@blog: ~$</h3>
-			<h1>organizing daydream bengaluru <3</h1>
+			<Custom />
+			<h1>{title}</h1>
 			<a href="/">back home?</a>&nbsp;
 			<a onclick="window.toggle_music()" id="music_tag">toggle music?</a><br><br>
 		<p>
